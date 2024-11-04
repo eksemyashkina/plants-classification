@@ -86,67 +86,6 @@ The models were fine-tuned based on the torchvision implementation and pretraine
 
 ![ResNet](assets/_resnet-plots.png)
 
-The ResNet model was trained for 10 epochs on the plant classification dataset, with the following key metrics observed in the final epoch:
-
-- **Train Loss**: 0.13493
-- **Train Accuracy**: 0.93058
-- **Test Loss**: 0.28589
-- **Test Accuracy**: 0.91233
-
-#### Observations from Training Curves
-
-- **Training Accuracy**:
-- The training accuracy curve shows a steady increase, with rapid initial improvement that gradually levels off near 0.93.
-- This high training accuracy indicates that the model is effectively capturing the underlying patterns in the training data.
-
-- **Training Loss**:
-- The training loss decreases sharply at first, then tapers off as training progresses, stabilizing around 0.13.
-- This steady decline in loss suggests that the model is converging well without signs of significant overfitting.
-
-- **Validation Accuracy**:
-- The validation accuracy improves consistently over the epochs, reaching 0.91233 in the final epoch.
-- The validation accuracy closely matches the training accuracy, indicating good generalization performance.
-
-- **Validation Loss**:
-- The validation loss shows a consistent downward trend, ending at 0.28589 by the 10th epoch.
-- The decreasing validation loss, alongside the high accuracy, suggests that the model is improving on unseen data without overfitting.
-
-#### Summary
-
-The ResNet model demonstrates excellent performance on the plant classification task, achieving a high test accuracy of 91.23% by the 10th epoch. The close alignment between training and validation metrics (both accuracy and loss) indicates that the model generalizes well, with minimal overfitting.
-
-
 ### Training Results of MobileNet
 
 ![MobileNet](assets/_mobilenet-plots.png)
-
-The MobileNet model was trained for 10 epochs on the plant classification dataset, with the following key metrics observed in the final epoch:
-
-- **Train Loss**: 0.22018
-- **Train Accuracy**: 0.90438
-- **Test Loss**: 0.31522
-- **Test Accuracy**: 0.8965
-
-#### Observations from Training Curves
-
-- **Training Accuracy**:
-- The training accuracy curve shows a strong initial increase, with accuracy rapidly improving before stabilizing near 0.90.
-- This indicates that the model is effectively learning patterns in the training data.
-
-- **Training Loss**:
-- The training loss decreases sharply at first, then gradually stabilizes around 0.22.
-- The steady decline in loss suggests that the model is converging well.
-
-- **Validation Accuracy**:
-- The validation accuracy improves consistently over the epochs, reaching 0.8965 in the final epoch.
-- This value is slightly lower than the training accuracy, but the close match suggests good generalization performance without significant overfitting.
-
-- **Validation Loss**:
-- The validation loss shows a consistent downward trend, ending at 0.31522 by the 10th epoch.
-- The decreasing validation loss, alongside the high validation accuracy, indicates that the model is performing well on unseen data.
-
-#### Summary
-
-The MobileNet model demonstrates solid performance on the plant classification task, achieving a test accuracy of 89.65% by the 10th epoch. The close alignment between training and validation metrics (both accuracy and loss) suggests that the model generalizes well to the validation data, with minimal overfitting.
-
-Comparing these results to the MobileNet model, ResNet achieves slightly higher accuracy and lower test loss, suggesting that it may be more effective for this particular classification task. However, this improved performance may come at the cost of higher computational requirements, which should be considered depending on the deployment environment.
