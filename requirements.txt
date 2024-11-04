@@ -1,0 +1,5 @@
+torch==2.4.1
+torchvision==0.19.1
+kaggle==1.6.17
+wandb==0.18.5
+gradio==5.4.0

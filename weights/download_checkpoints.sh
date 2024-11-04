@@ -1,0 +1,2 @@
+wget https://huggingface.co/eksemyashkina/plants-classification/resolve/main/checkpoint-best-mobilenet.pth
+wget https://huggingface.co/eksemyashkina/plants-classification/resolve/main/checkpoint-best-resnet.pth

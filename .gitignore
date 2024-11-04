@@ -1,0 +1,5 @@
+wandb/
+weights/*.pth
+data/plants/
+**/__pycache__/
+venv/
