@@ -35,7 +35,7 @@ def parse_args():
     parser.add_argument("--device", type=str, default="cuda" if torch.cuda.is_available() else "cpu", help="Device to run the training on")
     parser.add_argument("--model", type=str, default="mobilenet", choices=["resnet", "mobilenet"], help="Model class name")
     parser.add_argument("--save-frequency", type=int, default=4, help="Frequency of saving model weights")
-    parser.add_argument("--logs-dir", type=str, default="resnet-logs", choices=["resnet-logs", "mobilenet-logs"], help="???")
+    parser.add_argument("--logs-dir", type=str, default="resnet-logs", choices=["resnet-logs", "mobilenet-logs"], help="Directory for saving logs")
     return parser.parse_args()
 
 
