@@ -17,8 +17,8 @@ The models were fine-tuned based on the torchvision implementation and pretraine
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/plant-classifier.git
-    cd plant-classifier
+    git clone https://github.com/plant-classification.git
+    cd plant-classification
     ```
 
 2. Create and activate a virtual environment:
